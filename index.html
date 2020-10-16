@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./images/webmail.ico" />
+    <title>Web Mail login</title>
+    <!--  <script
+      src="https://kit.fontawesome.com/abf1a1833b.js"
+      crossorigin="anonymous"
+    ></script>  /// CND-->
+    <link
+      rel="stylesheet"
+      href="./fonts/fontawesome-free-5.14.0-web/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./style/style.css" />
+  </head>
+
+  <body>
+    <section>
+      <aside>
+        <header>
+          <h1>Web Mail</h1>
+          <img src="./images/webmail.svg" alt="web-mail" />
+        </header>
+
+        <form action="">
+          <div class="input-content">
+            <input type="text" id="name-input" required />
+            <label for="name-input">
+              <span class="label-span">Name</span>
+            </label>
+          </div>
+
+          <div class="input-content password-label">
+            <input type="password" id="pasword-input" required />
+            <label for="pasword-input">
+              <span class="label-span">Passwort</span>
+            </label>
+            <i id="password-eye" class="fas fa-eye-slash"></i>
+          </div>
+
+          <button class="btn">
+            Login
+            <span></span>
+          </button>
+        </form>
+      </aside>
+    </section>
+
+    <script src="./script/script.js"></script>
+  </body>
+</html>

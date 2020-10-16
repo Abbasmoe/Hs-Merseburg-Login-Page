@@ -1,0 +1,348 @@
+/*//////////////////////////////////////////////////////////////////
+[ Font ]*/
+
+/** CDN */
+/* @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap"); */
+
+@font-face {
+    font-family: Roboto;
+    src: url('../fonts/Roboto/Roboto-Regular.ttf');
+}
+
+@font-face {
+    font-family: Pacifico;
+    src: url('../fonts/Pacifico/Pacifico-Regular.ttf');
+}
+
+/*//////////////////////////////////////////////////////////////////
+[ RESTYLE CSS ]*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    height: 100%;
+    font-family: "Roboto", sans-serif;
+}
+
+aside form>* {
+    display: block;
+}
+
+/*//////////////////////////////////////////////////////////////////
+[ section ]*/
+section {
+    background-image: url("../images/HoMe-Logo.jpg");
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    animation-name: fadeIn;
+    animation-duration: 0.5s;
+    animation-timing-function: ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.97);
+        -webkit-transform: scale(0.97);
+        -moz-transform: scale(0.97);
+        -ms-transform: scale(0.97);
+        -o-transform: scale(0.97);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+    }
+}
+
+/*------------------------------------------------------------------
+[ aside ]*/
+aside {
+    width: 350px;
+    height: 540px;
+    margin: auto 13% auto auto;
+    background-color: #fff;
+    box-shadow: 2px 8px 15px rgba(0, 0, 0, 0.5), 1px 8px 16px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 2px 8px 15px rgba(0, 0, 0, 0.5),
+        1px 8px 16px rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: 2px 8px 15px rgba(0, 0, 0, 0.5),
+        1px 8px 16px rgba(0, 0, 0, 0.4);
+    -o-box-shadow: 2px 8px 15px rgba(0, 0, 0, 0.5),
+        1px 8px 16px rgba(0, 0, 0, 0.4);
+    -ms-box-shadow: 2px 8px 15px rgba(0, 0, 0, 0.5),
+        1px 8px 16px rgba(0, 0, 0, 0.4);
+    padding: 20px 0 28px;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+
+.fadeInRight {
+    animation-name: fadeInRight;
+    animation-duration: 0.8s;
+    animation-timing-function: ease;
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translate3d(5%, 0, 0);
+        -webkit-transform: translate3d(5%, 0, 0);
+        -moz-transform: translate3d(5%, 0, 0);
+        -ms-transform: translate3d(5%, 0, 0);
+        -o-transform: translate3d(5%, 0, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: none;
+        -webkit-transform: none;
+        -moz-transform: none;
+        -ms-transform: none;
+        -o-transform: none;
+    }
+}
+
+aside header {
+    text-align: center;
+    height: 36%;
+}
+
+aside header h1 {
+    font-family: "Pacifico", cursive;
+    font-size: 2rem;
+    padding: 7px 0px 7px 0px;
+    color: #194457;
+}
+
+aside header img {
+    height: 70%;
+}
+
+/*------------------------------------------------------------------
+[ form inputs ]*/
+aside form {
+    padding: 5% 14%;
+    margin-top: 20px;
+}
+
+.input-content {
+    position: relative;
+    width: 100%;
+    height: 3rem;
+    overflow: hidden;
+    margin-bottom: 29px;
+}
+
+.input-content input {
+    width: 100%;
+    height: 100%;
+    padding-top: 7%;
+    border: none;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+
+.input-content label {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-bottom: 3px solid #b9b3ac;
+}
+
+.password-label i {
+    position: absolute;
+    right: 5%;
+    bottom: 15%;
+    color: #194457;
+}
+
+.input-content label::after {
+    content: "";
+    width: 100%;
+    height: 6%;
+    position: absolute;
+    background: -webkit-linear-gradient(right, #194457, #272727);
+    background: -o-linear-gradient(right, #194457, #272727);
+    background: -moz-linear-gradient(right, #194457, #272727);
+    background: linear-gradient(right, #194457, #272727);
+    bottom: -3px;
+    left: 0%;
+    transform: translatex(-100%);
+    -webkit-transform: translatex(-100%);
+    -moz-transform: translatex(-100%);
+    -ms-transform: translatex(-100%);
+    -o-transform: translatex(-100%);
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+}
+
+.label-span {
+    position: absolute;
+    bottom: 11%;
+    left: 0%;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+}
+
+.input-content input:focus+label .label-span,
+.input-content input:valid+label .label-span {
+    transform: translateY(-120%);
+    -webkit-transform: translateY(-120%);
+    -moz-transform: translateY(-120%);
+    -ms-transform: translateY(-120%);
+    -o-transform: translateY(-120%);
+    color: #194457;
+}
+
+.input-content input:focus+label::after,
+.input-content input:valid+label::after {
+    transform: translatex(0%);
+    -webkit-transform: translatex(0%);
+    -moz-transform: translatex(0%);
+    -ms-transform: translatex(0%);
+    -o-transform: translatex(0%);
+}
+
+/*------------------------------------------------------------------
+[ button ]*/
+.btn {
+    display: block;
+    position: relative;
+    outline: none;
+    color: #fff;
+    font-size: 15px;
+    width: 100%;
+    height: 3rem;
+    border: none;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    cursor: pointer;
+    background: #194457;
+    z-index: 1;
+    overflow: hidden;
+    text-transform: uppercase;
+    margin-top: 45px;
+}
+
+.btn span {
+    position: absolute;
+    width: 236%;
+    height: 3rem;
+    background: -webkit-linear-gradient(right, #194457, #272727);
+    background: -o-linear-gradient(right, #194457, #272727);
+    background: -moz-linear-gradient(right, #194457, #272727);
+    background: linear-gradient(right, #194457, #272727);
+    top: 0;
+    left: -100%;
+    border: none;
+    z-index: -1;
+    transition: all 0.6s;
+    -webkit-transition: all 0.6s;
+    -moz-transition: all 0.6s;
+    -ms-transition: all 0.6s;
+    -o-transition: all 0.6s;
+}
+
+.btn:hover span {
+    left: 0;
+}
+
+/*------------------------------------------------------------------
+[ Responsive ]*/
+
+@media (min-width: 2000px) {
+    aside {
+        margin: auto 17% auto auto;
+    }
+}
+
+@media (max-width: 1200px) {
+    section {
+        background-image: url("../images/HoMe-Logo-crop.png");
+    }
+
+    aside {
+        margin: auto;
+        height: 450px;
+        width: 300px;
+    }
+
+    aside header img {
+        height: 60%;
+    }
+
+    aside header h1 {
+        font-size: 1.8rem;
+    }
+
+    aside form {
+        margin-top: 15px;
+    }
+
+    .btn {
+        margin-top: 40px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    aside {
+        height: 450px;
+        width: 300px;
+    }
+}
+
+@media (max-width: 300px) {
+    aside {
+        height: 390px;
+        width: 230px;
+    }
+
+    aside header img {
+        height: 55%;
+    }
+
+    aside header h1 {
+        font-size: 1.5rem;
+    }
+
+    aside form {
+        margin-top: 0px;
+    }
+
+    .btn {
+        margin-top: 20px;
+    }
+}
